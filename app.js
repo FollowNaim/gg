@@ -170,7 +170,10 @@ function nav(path) {
 	var search_text = model.is_search_page ? (model.q || '') : '';
 	var search_bar = `
 </ul>
-<div class="btn btn-warning"><a href="https://banglasubtitle.pages.dev">Back To Search</a></div>
+<form class="d-flex" method="get" action="/${cur}:search">
+<input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search" value="${search_text}" required>
+<button class="btn ${UI.search_button_class}" onclick="if($('#search_bar_form>input').val()) $('#search_bar_form').submit();" type="submit">Search</button>
+</form>
 </div>
 </div>
 </nav>
