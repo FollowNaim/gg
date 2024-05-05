@@ -149,8 +149,8 @@ function nav(path) {
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item btn btn-warning">
-        <a class="nav-link" href="https://banglasubtitle.pages.dev">${UI.nav_link_7}</a>
+      <li class="nav-item">
+        <a class="nav-link" href="/${cur}:/">${UI.nav_link_1}</a>
       </li>`;
 	var names = window.drive_names;
 	var drive_name = window.drive_names[cur];
@@ -334,7 +334,7 @@ function list(path, id = '', fallback = false) {
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb" id="folderne">
-          <li class="breadcrumb-item"><a href="/">Home</a></li>`;
+          <li class="breadcrumb-item"><a href="https://banglasubtitle.pages.dev">Back To Search</a></li>`;
 
 	var navfulllink = window.location.pathname;
 	var navarray = navfulllink.trim('/').split('/');
