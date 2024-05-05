@@ -162,13 +162,12 @@ function nav(path) {
 	});
 	html += `</div></li>`;
 
-	html += `<li class="nav-item">
-	<a class="nav-link btn btn-warning text-white" href="https://banglasubtitle.pages.dev/" target="_blank">Back To Search</a>
- </li> `;
 
 	html += `<li class="nav-item">
     <a class="nav-link" href="${UI.contact_link}" target="_blank">${UI.nav_link_4}</a>
-  </li>${UI.show_logout_button ?'<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>': ''}`;
+  </li>${UI.show_logout_button ?'<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>': ''} <li class="nav-item">
+  <a class="nav-link btn btn-warning text-white" href="https://banglasubtitle.pages.dev/" target="_blank">Back To Search</a>
+</li> `;
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
 	var search_bar = `
