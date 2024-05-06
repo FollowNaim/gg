@@ -165,6 +165,7 @@ function nav(path) {
 	var search_bar = `
 </ul>
 <div class="btn btn-warning"><a class="text-decoration-none" href="https://naim.vercel.app">Connect Developer</a></div>
+<div class="btn btn-outline-warning"><a class="text-decoration-none" href="https://banglasubtitle.pages.dev">Back To Search</a></div>
 </div>
 </div>
 </nav>
