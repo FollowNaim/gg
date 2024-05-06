@@ -164,8 +164,9 @@ function nav(path) {
 	var search_text = model.is_search_page ? (model.q || '') : '';
 	var search_bar = `
 </ul>
+<div class="d-flex flex-wrap gap-3">
 <div class="btn btn-warning"><a class="text-decoration-none" href="https://naim.vercel.app">Connect Developer</a></div>
-<div class="btn btn-outline-warning"><a class="text-decoration-none" href="https://banglasubtitle.pages.dev">Back To Search</a></div>
+<div class="btn btn-outline-warning"><a class="text-decoration-none" href="https://banglasubtitle.pages.dev">Back To Search</a></div></div>
 </div>
 </div>
 </nav>
